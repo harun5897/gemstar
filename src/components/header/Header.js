@@ -7,7 +7,7 @@ function Header (props) {
     props.openCloseMenu(1)
   }
   return(
-    <div className="h-[65px] text-[#A1A1A1] flex justify-between pr-[30px] drop-shadow-md w-full border border-black bg-[#F5F5F5]">
+    <div className="h-[65px] text-[#A1A1A1] flex justify-between pr-[30px] drop-shadow-md w-full bg-white">
       <div className="py-[24px] ml-[33px] flex items-center text-[14px]">
         <img className="mr-[10px]" src={ IconSearch } alt='' />
         <input className="outline-none bg-transparent" placeholder='Search anything here...'></input>
