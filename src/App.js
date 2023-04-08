@@ -7,7 +7,8 @@ function App() {
   // State
   const [widthScreen, setWidthScreen] =  useState(window.innerWidth)
   const [showMenu, setShowMenu] = useState('')
-  const [fullPage, setFullPage] = useState('295')
+  const [marginLeft, setMarginLeft] = useState('ml-[295px]')
+  const [paddingRight, setPaddingRight] = useState('pr-[295px]')
   const [showHidePage, setShowHidePage] = useState('')
 
   // Method
@@ -15,16 +16,19 @@ function App() {
     if(showMenu === 'hidden') {
       widthScreen < 1024 ? setShowHidePage('hidden') : setShowHidePage('block') 
       setShowMenu('block')
-      setFullPage('295')
+      setMarginLeft('ml-[295px]')
+      setPaddingRight('pr-[295px]')
     } else {
       setShowMenu('hidden')
-      setFullPage('0')
+      setMarginLeft('ml-[0px]')
+      setPaddingRight('pr-[0px]')
     }
   }
   const handleHideMenu = (value) => {
     setShowMenu('hidden')
     setShowHidePage('block')
-    setFullPage('0')
+    setMarginLeft('ml-[0px]')
+    setPaddingRight('pr-[295px]')
   }
 
   // UseEffect
@@ -40,10 +44,12 @@ function App() {
   useEffect(()=> {
     if(widthScreen < 1024) {
       setShowMenu('hidden')
-      setFullPage('0')
+      setMarginLeft('ml-[0px]')
+      setPaddingRight('pr-[0px]')
     } else {
       setShowMenu('block')
-      setFullPage('295')
+      setMarginLeft('ml-[295px]')
+      setPaddingRight('pr-[295px]')
     }
   },[widthScreen])
 
@@ -52,8 +58,8 @@ function App() {
       <div className={`fixed top-0 ${showMenu}`}>
         <NavigationMenu hideNavigationMenu={ handleHideMenu } />
       </div>
-      <div className={`relative ml-[${fullPage}px] ${showHidePage}`}>
-        <div className={`fixed top-0 z-10 w-full pr-[${fullPage}px]`}>
+      <div className={`relative ${marginLeft} ${showHidePage}`}>
+        <div className={`fixed top-0 z-10 w-full ${paddingRight}`}>
           <Header openCloseMenu={ handleShowHideMenu } />
         </div>
         <Home />
