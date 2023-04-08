@@ -1,6 +1,7 @@
 import IconPlus from '../assets/icons/icon-plus.svg'
 import IconFooter from '../assets/icons/icon-footer.svg'
-import Table from '../components/table/Table.js'
+// import Table from '../components/table/Table.js'
+import TableModify from '../components/table/TableModify.js'
 import Card from "../components/card/Card.js"
 
 function Home () {
@@ -26,7 +27,8 @@ function Home () {
           </button>
         </div>
       </div>
-      <Table />
+      {/* <Table /> */}
+      <TableModify />
       <div className="ml-[33px] mt-2 mb-10 cursor-pointer">
         <p className="text-[#1E67AF] text-[16px] font-[700]"> See all approvals here </p>
       </div>
