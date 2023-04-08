@@ -28,7 +28,7 @@ function App() {
     setShowMenu('hidden')
     setShowHidePage('block')
     setMarginLeft('ml-[0px]')
-    setPaddingRight('pr-[295px]')
+    setPaddingRight('pr-[0px]')
   }
 
   // UseEffect
