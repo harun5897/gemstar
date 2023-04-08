@@ -1,4 +1,5 @@
 import IconPlus from '../assets/icons/icon-plus.svg'
+import IconFooter from '../assets/icons/icon-footer.svg'
 import Table from '../components/table/Table.js'
 import Card from "../components/card/Card.js"
 
@@ -28,6 +29,9 @@ function Home () {
       <Table />
       <div className="ml-[33px] mt-2 mb-10 cursor-pointer">
         <p className="text-[#1E67AF] text-[16px] font-[700]"> See all approvals here </p>
+      </div>
+      <div className="ml-[33px] mt-2 mb-10 flex justify-end">
+        <img className="mr-3" src={ IconFooter } alt='' />
       </div>
     </div>
   )
