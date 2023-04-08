@@ -11,8 +11,8 @@ function NavigationMenu (props) {
     props.hideNavigationMenu(1)
   }
   return (
-    <div className="h-screen bg-[#8F8E8E] min-[1024px]:w-[295px] w-screen shadow-md text-white z-20">
-      <div className="bg-[#B8DCFF] py-[22px] pl-[23px] w-full flex justify-between h-[65px]">
+    <div className="h-screen bg-white min-[1024px]:w-[295px] w-screen shadow-md text-[#323A46] z-20">
+      <div className="bg-[#1E67AF] py-[22px] pl-[23px] w-full flex justify-between h-[65px]">
         <img src={ LogoNavigationMenu } alt="" />
         <div className="mr-7 min-[1024px]:hidden block cursor-pointer" onClick={ hideMenu }>
           <img src={ IconBurger } alt="" />
