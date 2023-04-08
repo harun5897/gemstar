@@ -19,9 +19,9 @@ function Home () {
           <p className="text-[14px] font-[400] leading-[19px]"> You can find the recent on-going approvals here </p>
         </div>
         <div className="ml-[33px] mt-7 sm:mt-0">
-          <button className=" py-[6px] px-[25px] rounded-[53px] leading-[19px] text-[16px] flex items-center font-bold border border-black text-black">
+          <button className=" py-[6px] px-[25px] rounded-[53px] leading-[19px] text-[16px] flex items-center border bg-[#1E67AF]">
             <img className="mr-3" src={ IconPlus } alt='' />
-            <span> Create new approval </span> 
+            <span className='text-white'> Create new approval </span> 
           </button>
         </div>
       </div>

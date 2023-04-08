@@ -24,7 +24,7 @@ function Table () {
             <td>
               <div className="flex">
                 <div className="w-[22px] h-[22px] rounded-full bg-[#FE0000B0] mr-2">
-                  <span className="text-[16px] font-[700] flex justify-center text-white"> J </span>
+                  <span className="text-[16px] font-[700] flex justify-center text-white">  </span>
                 </div>
                 <span> Jasmine </span>
               </div>
